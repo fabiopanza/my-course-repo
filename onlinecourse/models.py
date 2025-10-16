@@ -121,4 +121,4 @@ class Choice(models.Model):
 # One submission could have multiple choices
 class Submission(models.Model):
    enrollment = models.ForeignKey(Enrollment, on_delete=models.CASCADE)
-   choice = models.ManyToManyField(Choice)
+   choices = models.ManyToManyField(Choice)
